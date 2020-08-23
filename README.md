@@ -1,18 +1,20 @@
-React Navigation Easy KeyboardAvoidingView
-=====================
+# React Navigation Easy KeyboardAvoidingView
 
 This is a lightweight package for scrollable content running with React Navigation.
 
-### Installaition
+### Installation
+
 - TODO
 
 ### Properties
+
 - keyboardVerticalOffset (number)
 - [extends KeyboardAvoidingView props](https://reactnative.dev/docs/keyboardavoidingview)
 
-### Usage 
+### Usage
 
 #### Component
+
 ```js
 import { KeyboardAvoidingView } from '...'
 
@@ -28,14 +30,15 @@ export MyScreen = () => {
 ```
 
 #### HOC
+
 ```js
-import { withKeyboardAvoidingView } from '...'
+import { withKeyboardAvoidingView } from "...";
 
 const MyScreen = () => {
-  return (
-    <View />
-  )
-}
+  return <View />;
+};
 
-export default withKeyboardAvoidingView(MyScreen, { keyboardVerticalOffset: 10 })
+export default withKeyboardAvoidingView(MyScreen, {
+  keyboardVerticalOffset: 10,
+});
 ```
